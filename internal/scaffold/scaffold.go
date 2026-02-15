@@ -13,9 +13,10 @@ import (
 type PluginData struct {
 	Name      string
 	Namespace string
+	Scripts   []string
 }
 
-func Generate(pluginPath string, items []string, templateRootDir string) error {
+func Generate(pluginPath string, items []string, scripts []string, templateRootDir string) error {
 	// 1. Create plugin root
 	if _, err := os.Stat(pluginPath); !os.IsNotExist(err) {
 		return fmt.Errorf("directory '%s' already exists", pluginPath)
@@ -27,6 +28,7 @@ func Generate(pluginPath string, items []string, templateRootDir string) error {
 	data := PluginData{
 		Name:      filepath.Base(pluginPath),
 		Namespace: toPascalCase(filepath.Base(pluginPath)),
+		Scripts:   scripts,
 	}
 
 	// 2. Process items

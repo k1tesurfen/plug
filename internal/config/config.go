@@ -14,7 +14,8 @@ type Config struct {
 }
 
 type Starter struct {
-	Items []string `mapstructure:"items"`
+	Items   []string `mapstructure:"items"`
+	Scripts []string `mapstructure:"scripts"`
 }
 
 // Helper to get the specific ~/.config/plug path consistently

@@ -1,9 +1,7 @@
 <h1 align="center">
-  <img src="assets/plug-logo-250.png" alt="plug">
+  <img src="assets/plug-logo.svg" alt="plug" width="200">
   <p>plug CLI - Scaffold, Push, go next</p>
 </h1>
-
----
 
 ## plug CLI
 

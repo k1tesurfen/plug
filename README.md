@@ -1,4 +1,11 @@
-# plug CLI
+<h1 align="center">
+  <img src="assets/plug-logo-250.png" alt="plug">
+  <p>plug CLI - Scaffold, Push, go next</p>
+</h1>
+
+---
+
+## plug CLI
 
 A highly opinionated, lightning-fast scaffolding tool for WordPress Plugins.
 It generates boilerplates, sets up tests, and initializes private GitHub repositories in seconds.
